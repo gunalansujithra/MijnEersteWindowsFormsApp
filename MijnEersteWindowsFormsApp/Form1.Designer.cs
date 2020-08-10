@@ -28,97 +28,86 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblMijnLabel = new System.Windows.Forms.Label();
-            this.btnMijnButton = new System.Windows.Forms.Button();
-            this.cbLeerlingen = new System.Windows.Forms.ComboBox();
-            this.lbLeerlingen = new System.Windows.Forms.ListBox();
-            this.txtMijnText = new System.Windows.Forms.TextBox();
-            this.btnToevoegen = new System.Windows.Forms.Button();
+            this.btnOefening1 = new System.Windows.Forms.Button();
+            this.btnOefening2 = new System.Windows.Forms.Button();
+            this.btnOefening3 = new System.Windows.Forms.Button();
+            this.btnOefening4 = new System.Windows.Forms.Button();
+            this.btnOefeningLes = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // lblMijnLabel
+            // btnOefening1
             // 
-            this.lblMijnLabel.AutoSize = true;
-            this.lblMijnLabel.Location = new System.Drawing.Point(65, 48);
-            this.lblMijnLabel.Name = "lblMijnLabel";
-            this.lblMijnLabel.Size = new System.Drawing.Size(72, 17);
-            this.lblMijnLabel.TabIndex = 0;
-            this.lblMijnLabel.Text = "Mijn Label";
-            this.lblMijnLabel.Click += new System.EventHandler(this.label1_Click);
+            this.btnOefening1.Location = new System.Drawing.Point(248, 51);
+            this.btnOefening1.Name = "btnOefening1";
+            this.btnOefening1.Size = new System.Drawing.Size(201, 58);
+            this.btnOefening1.TabIndex = 7;
+            this.btnOefening1.Text = "Oefening 1";
+            this.btnOefening1.UseVisualStyleBackColor = true;
+            this.btnOefening1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // btnMijnButton
+            // btnOefening2
             // 
-            this.btnMijnButton.Location = new System.Drawing.Point(172, 139);
-            this.btnMijnButton.Name = "btnMijnButton";
-            this.btnMijnButton.Size = new System.Drawing.Size(75, 23);
-            this.btnMijnButton.TabIndex = 1;
-            this.btnMijnButton.Text = "Klick Mij";
-            this.btnMijnButton.UseVisualStyleBackColor = true;
-            this.btnMijnButton.Click += new System.EventHandler(this.btnMijnButton_Click);
+            this.btnOefening2.Location = new System.Drawing.Point(248, 159);
+            this.btnOefening2.Name = "btnOefening2";
+            this.btnOefening2.Size = new System.Drawing.Size(201, 58);
+            this.btnOefening2.TabIndex = 8;
+            this.btnOefening2.Text = "Oefening 2";
+            this.btnOefening2.UseVisualStyleBackColor = true;
+            this.btnOefening2.Click += new System.EventHandler(this.btnOefening2_Click);
             // 
-            // cbLeerlingen
+            // btnOefening3
             // 
-            this.cbLeerlingen.FormattingEnabled = true;
-            this.cbLeerlingen.Location = new System.Drawing.Point(68, 95);
-            this.cbLeerlingen.Name = "cbLeerlingen";
-            this.cbLeerlingen.Size = new System.Drawing.Size(121, 24);
-            this.cbLeerlingen.TabIndex = 2;
-            this.cbLeerlingen.Text = "--Select--";
-            this.cbLeerlingen.SelectedIndexChanged += new System.EventHandler(this.cbLeerlingen_SelectedIndexChanged);
+            this.btnOefening3.Location = new System.Drawing.Point(248, 274);
+            this.btnOefening3.Name = "btnOefening3";
+            this.btnOefening3.Size = new System.Drawing.Size(201, 58);
+            this.btnOefening3.TabIndex = 9;
+            this.btnOefening3.Text = "Oefening 3";
+            this.btnOefening3.UseVisualStyleBackColor = true;
+            this.btnOefening3.Click += new System.EventHandler(this.btnOefening3_Click);
             // 
-            // lbLeerlingen
+            // btnOefening4
             // 
-            this.lbLeerlingen.FormattingEnabled = true;
-            this.lbLeerlingen.ItemHeight = 16;
-            this.lbLeerlingen.Location = new System.Drawing.Point(68, 179);
-            this.lbLeerlingen.Name = "lbLeerlingen";
-            this.lbLeerlingen.Size = new System.Drawing.Size(179, 244);
-            this.lbLeerlingen.TabIndex = 3;
+            this.btnOefening4.Location = new System.Drawing.Point(248, 384);
+            this.btnOefening4.Name = "btnOefening4";
+            this.btnOefening4.Size = new System.Drawing.Size(201, 58);
+            this.btnOefening4.TabIndex = 10;
+            this.btnOefening4.Text = "Oefening 4";
+            this.btnOefening4.UseVisualStyleBackColor = true;
+            this.btnOefening4.Click += new System.EventHandler(this.btnOefening4_Click);
             // 
-            // txtMijnText
+            // btnOefeningLes
             // 
-            this.txtMijnText.Location = new System.Drawing.Point(68, 449);
-            this.txtMijnText.Name = "txtMijnText";
-            this.txtMijnText.Size = new System.Drawing.Size(120, 22);
-            this.txtMijnText.TabIndex = 5;
-            // 
-            // btnToevoegen
-            // 
-            this.btnToevoegen.Location = new System.Drawing.Point(205, 449);
-            this.btnToevoegen.Name = "btnToevoegen";
-            this.btnToevoegen.Size = new System.Drawing.Size(102, 35);
-            this.btnToevoegen.TabIndex = 6;
-            this.btnToevoegen.Text = "Toevoegen";
-            this.btnToevoegen.UseVisualStyleBackColor = true;
-            this.btnToevoegen.Click += new System.EventHandler(this.btnToevoegen_Click);
+            this.btnOefeningLes.Location = new System.Drawing.Point(249, 478);
+            this.btnOefeningLes.Name = "btnOefeningLes";
+            this.btnOefeningLes.Size = new System.Drawing.Size(199, 62);
+            this.btnOefeningLes.TabIndex = 11;
+            this.btnOefeningLes.Text = "Oefening Les";
+            this.btnOefeningLes.UseVisualStyleBackColor = true;
+            this.btnOefeningLes.Click += new System.EventHandler(this.btnOefeningLes_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 618);
-            this.Controls.Add(this.btnToevoegen);
-            this.Controls.Add(this.txtMijnText);
-            this.Controls.Add(this.lbLeerlingen);
-            this.Controls.Add(this.cbLeerlingen);
-            this.Controls.Add(this.btnMijnButton);
-            this.Controls.Add(this.lblMijnLabel);
+            this.Controls.Add(this.btnOefeningLes);
+            this.Controls.Add(this.btnOefening4);
+            this.Controls.Add(this.btnOefening3);
+            this.Controls.Add(this.btnOefening2);
+            this.Controls.Add(this.btnOefening1);
             this.Name = "Form1";
             this.Text = "Mijn App";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label lblMijnLabel;
-        private System.Windows.Forms.Button btnMijnButton;
-        private System.Windows.Forms.ComboBox cbLeerlingen;
-        private System.Windows.Forms.ListBox lbLeerlingen;
-        private System.Windows.Forms.TextBox txtMijnText;
-        private System.Windows.Forms.Button btnToevoegen;
+        private System.Windows.Forms.Button btnOefening1;
+        private System.Windows.Forms.Button btnOefening2;
+        private System.Windows.Forms.Button btnOefening3;
+        private System.Windows.Forms.Button btnOefening4;
+        private System.Windows.Forms.Button btnOefeningLes;
     }
 }
 
