@@ -44,7 +44,10 @@ namespace Oefening11082020
                             + "\n" + "Geslacht: " + geslacht
                             + "\n" + "Provincie: " + provincie;
 
-            MessageBox.Show(message);
+            if (txtNaam.Text != "" && txtAdres.Text != "" && numericUpDown1.Text != "" && geslacht != "" && provincie != "")
+            {
+                MessageBox.Show(message);
+            }
         }
     }
 }

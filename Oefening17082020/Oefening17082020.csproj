@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{AE98258F-1ABB-48E4-8C0D-B1AD35A4EC43}</ProjectGuid>
+    <ProjectGuid>{910A0A4D-58B5-4B3F-B8F9-CA821BEE59C2}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Oefening11082020</RootNamespace>
-    <AssemblyName>Oefening11082020</AssemblyName>
+    <RootNamespace>Oefening17082020</RootNamespace>
+    <AssemblyName>Oefening17082020</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,20 +46,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="2DArraysOef1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="2DArraysOef1.Designer.cs">
-      <DependentUpon>2DArraysOef1.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Attractie.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Notitie.cs" />
-    <Compile Include="NotitieBoekje.cs" />
+    <Compile Include="Klas.cs" />
+    <Compile Include="KlassRapport.cs" />
     <Compile Include="Oefening1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,17 +85,21 @@
     <Compile Include="Oefening5.Designer.cs">
       <DependentUpon>Oefening5.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SlotMachine.cs">
+    <Compile Include="Oefening6.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SlotMachine.Designer.cs">
-      <DependentUpon>SlotMachine.cs</DependentUpon>
+    <Compile Include="Oefening6.Designer.cs">
+      <DependentUpon>Oefening6.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="2DArraysOef1.resx">
-      <DependentUpon>2DArraysOef1.cs</DependentUpon>
-    </EmbeddedResource>
+    <Compile Include="Persoon.cs" />
+    <Compile Include="PretPark.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="School.cs" />
+    <Compile Include="Televisie.cs" />
+    <Compile Include="Teller.cs" />
+    <Compile Include="Werknemer.cs" />
+    <Compile Include="Zwembad.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -119,6 +118,9 @@
     <EmbeddedResource Include="Oefening5.resx">
       <DependentUpon>Oefening5.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Oefening6.resx">
+      <DependentUpon>Oefening6.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -128,9 +130,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="SlotMachine.resx">
-      <DependentUpon>SlotMachine.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

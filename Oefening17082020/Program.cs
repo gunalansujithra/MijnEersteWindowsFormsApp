@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Oefening11082020
+namespace Oefening17082020
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace Oefening11082020
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new _2DArraysOef1());
+            Application.Run(new Form1());
         }
     }
 }

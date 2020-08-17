@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MijnEersteWindowsFormsApp",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oefening11082020", "Oefening11082020\Oefening11082020.csproj", "{AE98258F-1ABB-48E4-8C0D-B1AD35A4EC43}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oefening17082020", "Oefening17082020\Oefening17082020.csproj", "{910A0A4D-58B5-4B3F-B8F9-CA821BEE59C2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{AE98258F-1ABB-48E4-8C0D-B1AD35A4EC43}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE98258F-1ABB-48E4-8C0D-B1AD35A4EC43}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE98258F-1ABB-48E4-8C0D-B1AD35A4EC43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{910A0A4D-58B5-4B3F-B8F9-CA821BEE59C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{910A0A4D-58B5-4B3F-B8F9-CA821BEE59C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{910A0A4D-58B5-4B3F-B8F9-CA821BEE59C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{910A0A4D-58B5-4B3F-B8F9-CA821BEE59C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

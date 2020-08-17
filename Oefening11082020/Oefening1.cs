@@ -54,5 +54,12 @@ namespace Oefening11082020
                 lbInactive.Items.Remove(selectedItem);
             }
         }
+
+        public void SwitchItems(ListBox active, ListBox inactive)
+        {
+
+        }
     }
+
+    
 }
