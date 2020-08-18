@@ -52,5 +52,17 @@ namespace Oefening17082020
             Oefening6 oefen6 = new Oefening6();
             oefen6.Show();
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Oefening7 oefen7 = new Oefening7();
+            oefen7.Show();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Oefening8 oefen8 = new Oefening8();
+            oefen8.Show();
+        }
     }
 }

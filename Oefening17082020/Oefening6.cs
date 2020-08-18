@@ -62,6 +62,7 @@ namespace Oefening17082020
                 mijnPretpark.WerknemerVerwijderen(lbWerknemer.SelectedIndex);
 
                 DisplayWerknemer();
+                lblWerknemerDetails.Text = "";
             }
         }
 
@@ -83,6 +84,111 @@ namespace Oefening17082020
                     lbWerknemer.Items.Add(item.Naam);
                 }
             }
+            else
+            {
+                lbWerknemer.Items.Clear();
+            }
         }
+
+        private void txtAantalPerson_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+        }
+
+        private void txtLeeftijd_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+        }
+
+        private void btnDeleteAttractie_Click(object sender, EventArgs e)
+        {
+            if (lbAttractie.SelectedItems.Count > 0)
+            {
+                mijnPretpark.AttractieVerwijderen(lbAttractie.SelectedIndex);
+
+                DisplayAttractie();
+                lblAttractieDetails.Text = "";
+            }
+        }
+
+        private void btnAddAttractie_Click(object sender, EventArgs e)
+        {
+            string naam = "";
+            string kleur = "";
+            int leeftijd = -1;
+            int aantalperson = -1;
+            if (txtAttaractieNaam.Text.Trim().Length > 0)
+            {
+                naam = txtAttaractieNaam.Text.Trim();
+            }
+            else
+            {
+                MessageBox.Show("Attratie naam is leeg");
+            }
+
+            if (txtKleur.Text.Trim().Length > 0)
+            {
+                kleur = txtKleur.Text.Trim();
+            }
+            else
+            {
+                MessageBox.Show("Kleur is leeg");
+            }
+
+            if (txtLeeftijd.Text.Trim().Length > 0)
+            {
+                leeftijd = Convert.ToInt32(txtLeeftijd.Text.Trim());
+            }
+            else
+            {
+                MessageBox.Show("Leeftijd is leeg");
+            }
+
+            if (txtAantalPerson.Text.Trim().Length > 0)
+            {
+                aantalperson = Convert.ToInt32(txtAantalPerson.Text.Trim());
+            }
+            else
+            {
+                MessageBox.Show("Maximum aantal personen is leeg");
+            }
+
+
+            if (naam.Length > 0 && kleur.Length > 0 && leeftijd >= 0 && aantalperson >= 0)
+            {
+                mijnPretpark.AttractieToevoegen(naam, kleur, leeftijd, aantalperson);
+                txtAttaractieNaam.Clear();
+                txtKleur.Clear();
+                txtLeeftijd.Clear();
+                txtAantalPerson.Clear();
+                
+                DisplayAttractie();
+            }
+        }
+
+        public void DisplayAttractie()
+        {
+            if (mijnPretpark.AttratieLijst.Count > 0)
+            {
+                lbAttractie.Items.Clear();
+                foreach (var item in mijnPretpark.AttratieLijst)
+                {
+                    lbAttractie.Items.Add(item.Naam);
+                }
+            }
+            else
+            {
+                lbAttractie.Items.Clear();
+            }
+        }
+
+        private void lbAttractie_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (lbAttractie.SelectedItems.Count > 0)
+            {
+                lblAttractieDetails.Text = mijnPretpark.AttractieBekijken(lbAttractie.SelectedIndex);
+            }
+        }
+
     }
 }

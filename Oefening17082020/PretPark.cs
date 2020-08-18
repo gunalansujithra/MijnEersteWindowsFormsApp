@@ -40,6 +40,13 @@ namespace Oefening17082020
             AttratieLijst.RemoveAt(index);
         }
 
+        public string AttractieBekijken(int index)
+        {
+            string details = AttratieLijst[index].Naam + "\r\n" + AttratieLijst[index].Kleur 
+                    + "\r\n" + AttratieLijst[index].MinimumLeeftijd + "\r\n" + AttratieLijst[index].MaximumAantalPersonen;
+            return details;
+        }
+
         public override string ToString()
         {
             return base.ToString();

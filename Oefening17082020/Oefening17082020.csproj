@@ -46,7 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Appointment.cs" />
     <Compile Include="Attractie.cs" />
+    <Compile Include="DansLesson.cs" />
+    <Compile Include="DansStudent.cs" />
+    <Compile Include="Dokter.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +95,18 @@
     <Compile Include="Oefening6.Designer.cs">
       <DependentUpon>Oefening6.cs</DependentUpon>
     </Compile>
+    <Compile Include="Oefening7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Oefening7.Designer.cs">
+      <DependentUpon>Oefening7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Oefening8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Oefening8.Designer.cs">
+      <DependentUpon>Oefening8.cs</DependentUpon>
+    </Compile>
     <Compile Include="Persoon.cs" />
     <Compile Include="PretPark.cs" />
     <Compile Include="Program.cs" />
@@ -99,6 +115,7 @@
     <Compile Include="Televisie.cs" />
     <Compile Include="Teller.cs" />
     <Compile Include="Werknemer.cs" />
+    <Compile Include="Ziekenhuis.cs" />
     <Compile Include="Zwembad.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -120,6 +137,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Oefening6.resx">
       <DependentUpon>Oefening6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Oefening7.resx">
+      <DependentUpon>Oefening7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Oefening8.resx">
+      <DependentUpon>Oefening8.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

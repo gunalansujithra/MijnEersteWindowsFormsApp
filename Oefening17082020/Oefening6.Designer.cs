@@ -50,11 +50,11 @@
             this.btnAddAttractie = new System.Windows.Forms.Button();
             this.txtAttaractieNaam = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtKleur = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtLeeftijd = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtAantalPerson = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -189,18 +189,16 @@
             this.lblWerknemerDetails.AutoSize = true;
             this.lblWerknemerDetails.Location = new System.Drawing.Point(611, 119);
             this.lblWerknemerDetails.Name = "lblWerknemerDetails";
-            this.lblWerknemerDetails.Size = new System.Drawing.Size(46, 17);
+            this.lblWerknemerDetails.Size = new System.Drawing.Size(0, 17);
             this.lblWerknemerDetails.TabIndex = 24;
-            this.lblWerknemerDetails.Text = "label3";
             // 
             // lblAttractieDetails
             // 
             this.lblAttractieDetails.AutoSize = true;
             this.lblAttractieDetails.Location = new System.Drawing.Point(614, 441);
             this.lblAttractieDetails.Name = "lblAttractieDetails";
-            this.lblAttractieDetails.Size = new System.Drawing.Size(46, 17);
+            this.lblAttractieDetails.Size = new System.Drawing.Size(0, 17);
             this.lblAttractieDetails.TabIndex = 35;
-            this.lblAttractieDetails.Text = "label3";
             // 
             // btnDeleteAttractie
             // 
@@ -210,6 +208,7 @@
             this.btnDeleteAttractie.TabIndex = 34;
             this.btnDeleteAttractie.Text = "Delete Attractie";
             this.btnDeleteAttractie.UseVisualStyleBackColor = true;
+            this.btnDeleteAttractie.Click += new System.EventHandler(this.btnDeleteAttractie_Click);
             // 
             // label6
             // 
@@ -229,6 +228,7 @@
             this.lbAttractie.Name = "lbAttractie";
             this.lbAttractie.Size = new System.Drawing.Size(194, 196);
             this.lbAttractie.TabIndex = 32;
+            this.lbAttractie.SelectedIndexChanged += new System.EventHandler(this.lbAttractie_SelectedIndexChanged);
             // 
             // label8
             // 
@@ -248,6 +248,7 @@
             this.btnAddAttractie.TabIndex = 30;
             this.btnAddAttractie.Text = "Add Attractie";
             this.btnAddAttractie.UseVisualStyleBackColor = true;
+            this.btnAddAttractie.Click += new System.EventHandler(this.btnAddAttractie_Click);
             // 
             // txtAttaractieNaam
             // 
@@ -265,12 +266,12 @@
             this.label10.TabIndex = 25;
             this.label10.Text = "Naam";
             // 
-            // textBox1
+            // txtKleur
             // 
-            this.textBox1.Location = new System.Drawing.Point(101, 459);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 37;
+            this.txtKleur.Location = new System.Drawing.Point(101, 459);
+            this.txtKleur.Name = "txtKleur";
+            this.txtKleur.Size = new System.Drawing.Size(100, 22);
+            this.txtKleur.TabIndex = 37;
             // 
             // label9
             // 
@@ -281,12 +282,13 @@
             this.label9.TabIndex = 36;
             this.label9.Text = "Kleur";
             // 
-            // textBox2
+            // txtLeeftijd
             // 
-            this.textBox2.Location = new System.Drawing.Point(162, 497);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 22);
-            this.textBox2.TabIndex = 39;
+            this.txtLeeftijd.Location = new System.Drawing.Point(162, 497);
+            this.txtLeeftijd.Name = "txtLeeftijd";
+            this.txtLeeftijd.Size = new System.Drawing.Size(100, 22);
+            this.txtLeeftijd.TabIndex = 39;
+            this.txtLeeftijd.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtLeeftijd_KeyPress);
             // 
             // label11
             // 
@@ -297,12 +299,13 @@
             this.label11.TabIndex = 38;
             this.label11.Text = "Minimum Leeftijd";
             // 
-            // textBox3
+            // txtAantalPerson
             // 
-            this.textBox3.Location = new System.Drawing.Point(221, 537);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 22);
-            this.textBox3.TabIndex = 41;
+            this.txtAantalPerson.Location = new System.Drawing.Point(221, 537);
+            this.txtAantalPerson.Name = "txtAantalPerson";
+            this.txtAantalPerson.Size = new System.Drawing.Size(100, 22);
+            this.txtAantalPerson.TabIndex = 41;
+            this.txtAantalPerson.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtAantalPerson_KeyPress);
             // 
             // label12
             // 
@@ -318,11 +321,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(819, 715);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtAantalPerson);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtLeeftijd);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtKleur);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.lblAttractieDetails);
             this.Controls.Add(this.btnDeleteAttractie);
@@ -377,11 +380,11 @@
         private System.Windows.Forms.Button btnAddAttractie;
         private System.Windows.Forms.TextBox txtAttaractieNaam;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtKleur;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtLeeftijd;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtAantalPerson;
         private System.Windows.Forms.Label label12;
     }
 }
