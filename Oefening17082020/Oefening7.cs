@@ -25,11 +25,11 @@ namespace Oefening17082020
             cbUur.DataSource = mijnZiekenhuis.ConsultationUurLijst;
             dtpDatum.MinDate = System.DateTime.Now.AddDays(1);
 
-            mijnZiekenhuis.DrAfsprakenToevoegen("0");
-            mijnZiekenhuis.DrAfsprakenToevoegen("1");
-            mijnZiekenhuis.DrAfsprakenToevoegen("2");
-            mijnZiekenhuis.DrAfsprakenToevoegen("3");
-            mijnZiekenhuis.DrAfsprakenToevoegen("4");
+            mijnZiekenhuis.DrAfsprakenToevoegen(mijnZiekenhuis.DokterLijst[0].ToString());
+            mijnZiekenhuis.DrAfsprakenToevoegen(mijnZiekenhuis.DokterLijst[1].ToString());
+            mijnZiekenhuis.DrAfsprakenToevoegen(mijnZiekenhuis.DokterLijst[2].ToString());
+            mijnZiekenhuis.DrAfsprakenToevoegen(mijnZiekenhuis.DokterLijst[3].ToString());
+            mijnZiekenhuis.DrAfsprakenToevoegen(mijnZiekenhuis.DokterLijst[4].ToString());
             
         }
 
@@ -51,9 +51,8 @@ namespace Oefening17082020
             if (naam.Length > 0)
             {
                 mijnZiekenhuis.DokterAfsprakenLijst[cbDokter.SelectedIndex].AppointmentToevoegen(naam, datum, tijd);
-                //mijnZiekenhuis.AppointmentLijst[cbDokter.SelectedIndex]..AddStudent(naam, geboorte, geslacht);
                 txtNaam.Clear();
-                dtpDatum.Value = DateTime.Now;
+                dtpDatum.Value = DateTime.Now.AddDays(1);
                 cbUur.SelectedIndex = 0;
 
                 if (mijnZiekenhuis.DokterAfsprakenLijst[cbDokter.SelectedIndex].AppointmentLijst.Count > 0)
