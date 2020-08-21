@@ -61,31 +61,16 @@ namespace Oefening21082020Bankapp
                 }
                 else
                 {
-                    int index = -1;
-                    int removeIndex = -1;
-                    bool isRemove = false;
                     foreach (var item in Home.mijnAccount.BankLijst)
                     {
-                        index++;
                         if (item.AccountNumber == senderAccount)
                         {
-                            item.Balance -= amount;
-
-                            if (isDebit && item.Balance == 0)
-                            {
-                                isRemove = true;
-                                removeIndex = index;
-                            }
+                            item.Balance -= amount;                            
                         }
                         if (item.AccountNumber == cbRekeningNummer.SelectedItem.ToString())
                         {
                             item.Balance += amount;
                         }
-                    }
-
-                    if (isRemove)
-                    {
-                        Home.mijnAccount.BankLijst.RemoveAt(removeIndex);
                     }
 
                     this.DialogResult = DialogResult.OK;

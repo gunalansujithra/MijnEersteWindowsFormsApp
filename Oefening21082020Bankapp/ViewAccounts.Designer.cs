@@ -32,6 +32,7 @@
             this.lbRekening = new System.Windows.Forms.ListBox();
             this.BtnOverschrijven = new System.Windows.Forms.Button();
             this.lblRekening = new System.Windows.Forms.Label();
+            this.btnDelete = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbType
@@ -73,11 +74,22 @@
             this.lblRekening.TabIndex = 3;
             this.lblRekening.Text = "label1";
             // 
+            // btnDelete
+            // 
+            this.btnDelete.Location = new System.Drawing.Point(638, 283);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(122, 45);
+            this.btnDelete.TabIndex = 4;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
             // ViewAccounts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(923, 448);
+            this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.lblRekening);
             this.Controls.Add(this.BtnOverschrijven);
             this.Controls.Add(this.lbRekening);
@@ -96,6 +108,7 @@
         private System.Windows.Forms.ListBox lbRekening;
         private System.Windows.Forms.Button BtnOverschrijven;
         private System.Windows.Forms.Label lblRekening;
+        private System.Windows.Forms.Button btnDelete;
     }
 }
 

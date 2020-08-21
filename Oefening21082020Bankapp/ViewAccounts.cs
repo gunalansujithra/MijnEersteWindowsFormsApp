@@ -25,6 +25,7 @@ namespace Oefening21082020Bankapp
             lbType.Items.Add("Spaarrekening");
             BtnOverschrijven.Enabled = false;
             lblRekening.Visible = false;
+            btnDelete.Visible = false;
         }
 
         private void lbType_SelectedIndexChanged(object sender, EventArgs e)
@@ -72,9 +73,18 @@ namespace Oefening21082020Bankapp
             {
                 lblRekening.Visible = true;
                 lblRekening.Text = selectedRekening.Beschrijf();
+                if (selectedRekening.Balance == 0 && lbType.SelectedItem.ToString() == "Debitrekening")
+                {
+                    btnDelete.Visible = true;
+                }
+                else
+                {
+                    btnDelete.Visible = false;
+                }
             }
             else
             {
+                btnDelete.Visible = false;
                 lblRekening.Visible = false;
                 lblRekening.Text = "";
             }
@@ -94,7 +104,15 @@ namespace Oefening21082020Bankapp
 
                     lbRekening.DataSource = null;
                     lbRekening.DataSource = debit;
-                    BtnOverschrijven.Enabled = true;
+                    if (lbRekening.DataSource != null && lbRekening.Items.Count > 0)
+                    {
+                        BtnOverschrijven.Enabled = true;
+                    }
+                    else
+                    {
+                        BtnOverschrijven.Enabled = false;
+                    }
+                    
                     break;
 
                 case "Creditrekening":
@@ -126,6 +144,33 @@ namespace Oefening21082020Bankapp
                 default:
 
                     break;
+            }
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            int index = -1;
+            int selectedIndex = -1;
+            foreach(var item in Home.mijnAccount.BankLijst)
+            {
+                index++;
+                if (item.AccountNumber == lbRekening.SelectedItem.ToString())
+                {
+                    selectedIndex = index;
+                }
+            }
+
+            Home.mijnAccount.BankLijst.RemoveAt(selectedIndex);
+
+            DisplayLabel();
+            SetRekeningListBox(lbType.SelectedItem.ToString());
+            if (lbRekening != null && lbRekening.SelectedItems.Count > 0)
+            {
+                BtnOverschrijven.Enabled = true;
+            }
+            else
+            {
+                BtnOverschrijven.Enabled = false;
             }
         }
     }
