@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oefening19082020ClassInheri
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oefening21082020Bankapp", "Oefening21082020Bankapp\Oefening21082020Bankapp.csproj", "{8D502175-BDB0-4C4C-A3E3-0B5D6AADAD7F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oefening24082020", "Oefening24082020\Oefening24082020.csproj", "{3489A8D1-7801-4676-8289-87CDC47F74BC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{8D502175-BDB0-4C4C-A3E3-0B5D6AADAD7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D502175-BDB0-4C4C-A3E3-0B5D6AADAD7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8D502175-BDB0-4C4C-A3E3-0B5D6AADAD7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3489A8D1-7801-4676-8289-87CDC47F74BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3489A8D1-7801-4676-8289-87CDC47F74BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3489A8D1-7801-4676-8289-87CDC47F74BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3489A8D1-7801-4676-8289-87CDC47F74BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
